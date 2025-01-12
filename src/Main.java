@@ -7,13 +7,11 @@ public class Main {
         Empleado paco = new Empleado("Paco","Romero", 567, "Controlsys");
 
         Scanner sc = new Scanner(System.in);
-        sc.next();
 
         System.out.println("Los datos de este empleado son:\n" + paco);
         System.out.println("¿Es correcto?");
-        sc.next();
-
-
+        String newname = sc.next();
+        paco.setNombre(newname);
 
         System.out.println("Los datos de este empleado son:\n" + paco);
 
