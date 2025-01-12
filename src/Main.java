@@ -1,9 +1,11 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.print("Hola mundo!");
-        System.out.print("Hola mundo!");
-        System.out.println("Hola");
-        System.out.print("Hola mundo!");
-        Integer edad = 30;
+        Empleado antonio = new Empleado("Antonio","García",897,"Apple");
+        System.out.print("El empleado es:" + antonio);
+        Scanner sc = new Scanner(System.in);
+        String nombre2 = sc.next();
     }
+
 }
