@@ -4,6 +4,6 @@ public class Main {
         System.out.print("Hola mundo!");
         System.out.println("Hola");
         System.out.print("Hola mundo!");
-
+        Integer edad = 30;
     }
 }
