@@ -47,12 +47,9 @@ public class Empleado {
 
     @Override
     public String toString() {
-        return "Empleado{" +
-                "nombre='" + nombre + '\'' +
-                ", apellidos='" + apellidos + '\'' +
-                ", codigo=" + codigo +
-                ", empresa='" + empresa + '\'' +
-                '}';
+        return "Empleado= " + nombre + "\s" + apellidos +
+                "\nCodigo= " + codigo +
+                "\nEmpresa= " + empresa;
     }
 }
 
