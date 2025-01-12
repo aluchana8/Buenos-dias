@@ -15,6 +15,10 @@ public class Main {
 
         System.out.println("Los datos de este empleado son:\n" + paco);
 
-
+        System.out.println("Dime el apellido");
+        String apellido2 = sc.next();
+        System.out.println("Vas a cambiar " + paco.getApellidos() + " por " + apellido2 );
+        paco.setApellidos(apellido2);
+        System.out.println("Los datos de este empleado son:\n" + paco);
     }
 }
