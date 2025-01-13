@@ -21,21 +21,38 @@ public class Main {
 
         //Ejercicio 2
 
-        Coche peugeot = new Coche("Peugeot","308", 12200.00);
+        //Coche peugeot = new Coche("Peugeot","308", 12200.00);
+        //Scanner sc = new Scanner(System.in);
+
+        //System.out.println("Los datos del coche son:\n" + peugeot);
+        //System.out.println("A continuación, confirma o cambia la marca.");
+        //String nuevamarca = sc.next();
+        //peugeot.setMarca(nuevamarca);
+        //System.out.println("A continuación, confirma o cambia el modelo.");
+        //String nuevomodelo = sc.next();
+        //peugeot.setModelo(nuevomodelo);
+        //System.out.println("A continuación, confirma o cambia el precio.\nRecuerda que el formato es númerico");
+        //Double nuevoprecio = Double.valueOf(sc.next());
+        //peugeot.setPrecio(nuevoprecio);
+        //System.out.println("Actualizado");
+        //System.out.println("Los datos del coche son:\n" + peugeot);
+
+        //Ejercicio 3
+
+        Libro eragon = new Libro("Eragon","Christopher Paolini", 19.99);
         Scanner sc = new Scanner(System.in);
-
-        System.out.println("Los datos del coche son:\n" + peugeot);
-        System.out.println("A continuación, confirma o cambia la marca.");
-        String nuevamarca = sc.next();
-        peugeot.setMarca(nuevamarca);
-        System.out.println("A continuación, confirma o cambia el modelo.");
-        String nuevomodelo = sc.next();
-        peugeot.setModelo(nuevomodelo);
-        System.out.println("A continuación, confirma o cambia el precio.\nRecuerda que el formato es númerico");
-        Double nuevoprecio = Double.valueOf(sc.next());
-        peugeot.setPrecio(nuevoprecio);
+        System.out.println(eragon);
+        System.out.println("Introduzca datos nuevos de ser necesario");
+        System.out.println("A continuación, confirma o cambia el titulo.");
+        String nuevotitulo = sc.next();
+        eragon.setTitulo(nuevotitulo);
+        System.out.println("A continuación, confirma o cambia el autor.");
+        String nuevoautor = sc.next();
+        eragon.setAutor(nuevoautor);
+        System.out.println("A continuación, confirma o cambia el precio.\\nRecuerda que el formato es númerico");
+        Double nuevopreciolibro = Double.valueOf(sc.next());
+        eragon.setPrecio(nuevopreciolibro);
         System.out.println("Actualizado");
-        System.out.println("Los datos del coche son:\n" + peugeot);
-
+        System.out.println(eragon);
     }
 }
