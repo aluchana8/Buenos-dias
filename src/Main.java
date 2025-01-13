@@ -31,7 +31,7 @@ public class Main {
 
         //Ejercicio 6
 
-        ejercicio6(sc);
+        //ejercicio6(sc);
 
         //Ejercicio 7
 
