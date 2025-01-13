@@ -35,7 +35,7 @@ public class Main {
 
         //Ejercicio 7
 
-        //ejercicio7(sc);
+        ejercicio7(sc);
 
     }
 
@@ -190,6 +190,36 @@ public class Main {
 
     }
     public static void ejercicio7(Scanner sc) {
+        System.out.println("Escriba el primer numero.");
+        while (!sc.hasNextDouble()) {
+            System.out.println("El dato debe ser numerico");
+            sc.next();
+        }
+        Double primernumero = Double.valueOf(sc.next());
+
+        System.out.println("Escriba el segundo numero.");
+        while (!sc.hasNextDouble()) {
+            System.out.println("El dato debe ser numerico");
+            sc.next();
+        }
+        Double segundonumero = Double.valueOf(sc.next());
+
+        System.out.println("Escriba el tercer numero.");
+        while (!sc.hasNextDouble()) {
+            System.out.println("El dato debe ser numerico");
+            sc.next();
+        }
+        Double tercernumero = Double.valueOf(sc.next());
+
+        if ( primernumero>segundonumero && primernumero>tercernumero ){
+            System.out.println("El numero mas alto es el primero: " + primernumero);
+        }
+        if ( segundonumero>primernumero && segundonumero>tercernumero ){
+            System.out.println("El numero mas alto es el segundo: " + segundonumero);
+        }
+        if ( tercernumero>primernumero && tercernumero>segundonumero ){
+            System.out.println("El numero mas alto es tercero: " + tercernumero);
+        }
 
     }
 }
