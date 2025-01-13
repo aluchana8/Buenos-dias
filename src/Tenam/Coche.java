@@ -4,6 +4,7 @@ public class Coche {
     private String marca;
     private String modelo;
     private Double precio;
+    private Double descuento;
 
     public Coche(String marca, String modelo, Double precio){
         this.marca = marca;
@@ -34,6 +35,14 @@ public class Coche {
 
     public void setPrecio(Double precio) {
         this.precio = precio;
+    }
+
+    public Double getDescuento() {
+        return descuento;
+    }
+
+    public void setDescuento(Double descuento) {
+        this.descuento = descuento;
     }
 
     @Override
