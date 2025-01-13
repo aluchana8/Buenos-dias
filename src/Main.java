@@ -19,7 +19,7 @@ public class Main {
 
         //Ejercicio 4
 
-            //ejercicio4(sc,ejercicio2(sc));
+            //ejercicio4(sc, ejercicio2(sc));
 
         //Ejercicio prueba
 
@@ -88,6 +88,7 @@ public class Main {
         System.out.println(eragon);
     }
     public static void ejercicio4(Scanner sc, Coche peugeot){
+        ejercicio2(sc);
         System.out.println("Aplicar descuento. Recuerda que el formato es númerico");
         while (!sc.hasNextDouble()) {
             System.out.println("El dato debe ser numerico");
