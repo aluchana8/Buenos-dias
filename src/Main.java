@@ -55,7 +55,7 @@ public class Main {
         eragon.setTitulo(nuevotitulo);
         System.out.println("A continuación, confirma o cambia el autor.");
         String nuevoautor = sc.next();
-        ragon.setAutor(nuevoautor);
+        eragon.setAutor(nuevoautor);
         System.out.println("A continuación, confirma o cambia el precio.\\nRecuerda que el formato es númerico");
         Double nuevopreciolibro = Double.valueOf(sc.next());
         eragon.setPrecio(nuevopreciolibro);
@@ -76,5 +76,33 @@ public class Main {
         System.out.println("Los datos del coche son:\n" + peugeot);
         */
 
+        /*Prueba if y else
+        Pruebaifelse uno = new Pruebaifelse(0.0);
+        System.out.println("Empezamos con la prueba del if y el else");
+        Scanner sc = new Scanner(System.in);
+        double nuevoprecioif = 0;
+        double nuevodescuentoif = 0;
+        System.out.println("Escriba un precio.");
+        if (!sc.hasNextDouble()) {
+            System.out.println("El dato debe ser numerico");
+        } else {
+            nuevoprecioif = Double.valueOf(sc.next());
+        }
+        System.out.println("Escriba un descuento.");
+
+        if (!sc.hasNextDouble()) {
+            System.out.println("El dato debe ser numerico");
+        } else {
+            nuevodescuentoif = Double.valueOf(sc.next());
+        }
+        uno.setPrecio(nuevoprecioif);
+        uno.setDescuento(nuevodescuentoif);
+        System.out.println(uno);
+
+        Double porcendescuentoif = nuevodescuentoif / 100;
+        uno.setPrecio(uno.getPrecio() - (uno.getPrecio() * porcendescuentoif));
+
+        System.out.println("El precio con descuento es " + uno.getPrecio());
+        */
     }
 }
