@@ -4,9 +4,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        //Ejercicio 1
         /*
-        Ejercicio 1
-
         Empleado paco = new Empleado("Paco","Romero", 567, "Controlsys");
         Scanner sc = new Scanner(System.in);
         System.out.println("Los datos de este empleado son:\n" + paco);
@@ -21,10 +20,8 @@ public class Main {
         System.out.println("Los datos de este empleado son:\n" + paco);
         */
 
-
+        //Ejercicio 2
         /*
-        Ejercicio 2
-
         Coche peugeot = new Coche("Peugeot","308", 12200.00);
         Scanner sc = new Scanner(System.in);
 
@@ -35,16 +32,20 @@ public class Main {
         System.out.println("A continuación, confirma o cambia el modelo.");
         String nuevomodelo = sc.next();
         peugeot.setModelo(nuevomodelo);
-        System.out.println("A continuación, confirma o cambia el precio.\nRecuerda que el formato es númerico");
+        System.out.println("A continuación, confirma o cambia el precio.");
+        while (!sc.hasNextDouble()) {
+            System.out.println("El dato debe ser numerico");
+            sc.next();
+        }
         Double nuevoprecio = Double.valueOf(sc.next());
         peugeot.setPrecio(nuevoprecio);
         System.out.println("Actualizado");
         System.out.println("Los datos del coche son:\n" + peugeot);
+
         */
 
+        //Ejercicio 3
         /*
-        Ejercicio 3
-
 
         Libro eragon = new Libro("Eragon","Christopher Paolini", 19.99);
         Scanner sc = new Scanner(System.in);
@@ -56,17 +57,28 @@ public class Main {
         System.out.println("A continuación, confirma o cambia el autor.");
         String nuevoautor = sc.next();
         eragon.setAutor(nuevoautor);
-        System.out.println("A continuación, confirma o cambia el precio.\\nRecuerda que el formato es númerico");
+        System.out.println("A continuación, confirma o cambia el precio.");
+        while (!sc.hasNextDouble()) {
+            System.out.println("El dato debe ser numerico");
+            sc.next();
+        }
+
         Double nuevopreciolibro = Double.valueOf(sc.next());
+
         eragon.setPrecio(nuevopreciolibro);
         System.out.println("Actualizado");
         System.out.println(eragon);
         */
 
 
-        /*Ejercicio 4
 
+        //Ejercicio 4
+        /*
         System.out.println("Aplicar descuento. Recuerda que el formato es númerico");
+        while (!sc.hasNextDouble()) {
+            System.out.println("El dato debe ser numerico");
+            sc.next();
+        }
         Double nuevodescuento = Double.valueOf(sc.next());
         peugeot.setDescuento(nuevodescuento);
         Double porcendescuento = nuevodescuento / 100;
@@ -75,26 +87,28 @@ public class Main {
         System.out.println("Actualizado");
         System.out.println("Los datos del coche son:\n" + peugeot);
         */
-
-        /*Prueba if y else
+        //Ejercicio prueba
+        /*
         Pruebaifelse uno = new Pruebaifelse(0.0);
         System.out.println("Empezamos con la prueba del if y el else");
         Scanner sc = new Scanner(System.in);
         double nuevoprecioif = 0;
         double nuevodescuentoif = 0;
         System.out.println("Escriba un precio.");
-        if (!sc.hasNextDouble()) {
+        while (!sc.hasNextDouble()) {
             System.out.println("El dato debe ser numerico");
-        } else {
-            nuevoprecioif = Double.valueOf(sc.next());
+            sc.next();
         }
+        nuevoprecioif = Double.valueOf(sc.next());
+
         System.out.println("Escriba un descuento.");
 
-        if (!sc.hasNextDouble()) {
+        while (!sc.hasNextDouble()) {
             System.out.println("El dato debe ser numerico");
-        } else {
-            nuevodescuentoif = Double.valueOf(sc.next());
+            sc.next();
         }
+        nuevodescuentoif = Double.valueOf(sc.next());
+
         uno.setPrecio(nuevoprecioif);
         uno.setDescuento(nuevodescuentoif);
         System.out.println(uno);
