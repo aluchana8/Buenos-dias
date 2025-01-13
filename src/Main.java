@@ -4,10 +4,32 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //Ejercicio 1
-        /*
-        Empleado paco = new Empleado("Paco","Romero", 567, "Controlsys");
         Scanner sc = new Scanner(System.in);
+        //Ejercicio 1
+
+            //ejercicio1(sc);
+
+        //Ejercicio 2
+
+            //ejercicio2(sc);
+
+        //Ejercicio 3
+
+            //ejercicio3(sc);
+
+        //Ejercicio 4
+
+            //ejercicio4(sc,ejercicio2(sc));
+
+        //Ejercicio prueba
+
+            //ejercicioPrueba(sc);
+
+    }
+
+    public static void ejercicio1(Scanner sc){
+        Empleado paco = new Empleado("Paco","Romero", 567, "Controlsys");
+
         System.out.println("Los datos de este empleado son:\n" + paco);
         System.out.println("¿Es correcto?");
         String newname = sc.next();
@@ -18,12 +40,11 @@ public class Main {
         System.out.println("Vas a cambiar " + paco.getApellidos() + " por " + apellido2 );
         paco.setApellidos(apellido2);
         System.out.println("Los datos de este empleado son:\n" + paco);
-        */
+    }
 
-        //Ejercicio 2
-        /*
+    public static Coche ejercicio2(Scanner sc){
         Coche peugeot = new Coche("Peugeot","308", 12200.00);
-        Scanner sc = new Scanner(System.in);
+
 
         System.out.println("Los datos del coche son:\n" + peugeot);
         System.out.println("A continuación, confirma o cambia la marca.");
@@ -42,13 +63,10 @@ public class Main {
         System.out.println("Actualizado");
         System.out.println("Los datos del coche son:\n" + peugeot);
 
-        */
-
-        //Ejercicio 3
-        /*
-
+        return peugeot;
+    }
+    public static void ejercicio3(Scanner sc){
         Libro eragon = new Libro("Eragon","Christopher Paolini", 19.99);
-        Scanner sc = new Scanner(System.in);
         System.out.println(eragon);
         System.out.println("Introduzca datos nuevos de ser necesario");
         System.out.println("A continuación, confirma o cambia el titulo.");
@@ -68,12 +86,8 @@ public class Main {
         eragon.setPrecio(nuevopreciolibro);
         System.out.println("Actualizado");
         System.out.println(eragon);
-        */
-
-
-
-        //Ejercicio 4
-        /*
+    }
+    public static void ejercicio4(Scanner sc, Coche peugeot){
         System.out.println("Aplicar descuento. Recuerda que el formato es númerico");
         while (!sc.hasNextDouble()) {
             System.out.println("El dato debe ser numerico");
@@ -86,12 +100,11 @@ public class Main {
 
         System.out.println("Actualizado");
         System.out.println("Los datos del coche son:\n" + peugeot);
-        */
-        //Ejercicio prueba
-        /*
+    }
+
+    public static void ejercicioPrueba(Scanner sc){
         Pruebaifelse uno = new Pruebaifelse(0.0);
         System.out.println("Empezamos con la prueba del if y el else");
-        Scanner sc = new Scanner(System.in);
         double nuevoprecioif = 0;
         double nuevodescuentoif = 0;
         System.out.println("Escriba un precio.");
@@ -117,6 +130,5 @@ public class Main {
         uno.setPrecio(uno.getPrecio() - (uno.getPrecio() * porcendescuentoif));
 
         System.out.println("El precio con descuento es " + uno.getPrecio());
-        */
     }
 }
