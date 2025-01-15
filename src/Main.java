@@ -245,7 +245,7 @@ public class Main {
             System.out.println("El dato debe ser numerico");
             sc.next();
         }
-        Double primernumero8 = Double.valueOf(sc.next());
+        Double primernumero_8 = Double.valueOf(sc.next());
 
         System.out.println("Escriba el operando.");
 
@@ -274,14 +274,14 @@ public class Main {
         }
 
         Double resultado8 = switch (operando) {
-            case "+" -> primernumero8 + segundonumero8;
-            case "-" -> primernumero8 - segundonumero8;
-            case "*" -> primernumero8 * segundonumero8;
-            default -> primernumero8 / segundonumero8;
+            case "+" -> primerNumero_8 + segundonumero8;
+            case "-" -> primerNumero_8 - segundonumero8;
+            case "*" -> primerNumero_8 * segundonumero8;
+            default -> primerNumero_8 / segundonumero8;
         };
 
 
-        System.out.println("El resultado de "+ primernumero8 + "\s" + operando + "\s" +
+        System.out.println("El resultado de "+ primerNumero_8 + "\s" + operando + "\s" +
                 segundonumero8 +" es: " + resultado8);
     }
     public static void ejercicio9(Scanner sc) {
@@ -308,7 +308,7 @@ public class Main {
 
         System.out.println("Escriba el numero hasta el que quiere comprobar");
         while (!sc.hasNextInt()) {
-            System.out.println("El dato debe ser numerico y entero");
+            System.out.println("El datoq numerico y entero");
             sc.next();
         }
         Integer numero10 = Integer.valueOf(sc.next());
