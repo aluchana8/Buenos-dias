@@ -1,10 +1,12 @@
 import Tenam.*;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        sc.useLocale(Locale.US);
         //Ejercicio 1
 
         //ejercicio1(sc);
@@ -35,7 +37,22 @@ public class Main {
 
         //Ejercicio 7
 
-        ejercicio7(sc);
+        //ejercicio7(sc);
+        //Ejercicio 8
+
+        //ejercicio8(sc);
+
+        //Ejercicio 9
+
+        //ejercicio9(sc);
+
+        //Ejercicio 10
+
+        //ejercicio10(sc);
+
+        //Ejercicio 11
+
+        //ejercicio11(sc);
 
     }
 
@@ -220,6 +237,18 @@ public class Main {
         if ( tercernumero>primernumero && tercernumero>segundonumero ){
             System.out.println("El numero mas alto es tercero: " + tercernumero);
         }
+
+    }
+    public static void ejercicio8(Scanner sc) {
+
+    }
+    public static void ejercicio9(Scanner sc) {
+
+    }
+    public static void ejercicio10(Scanner sc) {
+
+    }
+    public static void ejercicio11(Scanner sc) {
 
     }
 }
