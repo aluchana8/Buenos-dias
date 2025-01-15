@@ -240,6 +240,27 @@ public class Main {
 
     }
     public static void ejercicio8(Scanner sc) {
+        System.out.println("Escriba el primer numero.");
+        while (!sc.hasNextDouble()) {
+            System.out.println("El dato debe ser numerico");
+            sc.next();
+        }
+        Double primernumero8 = Double.valueOf(sc.next());
+
+        System.out.println("Escriba el operando.");
+
+        while () {
+            System.out.println("El dato debe ser +,-,* ó /");
+            sc.next();
+        }
+        Double operando = Double.valueOf(sc.next());
+
+        System.out.println("Escriba el segundo numero.");
+        while (!sc.hasNextDouble()) {
+            System.out.println("El dato debe ser numerico");
+            sc.next();
+        }
+        Double segundonumero8 = Double.valueOf(sc.next());
 
     }
     public static void ejercicio9(Scanner sc) {
