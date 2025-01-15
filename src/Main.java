@@ -274,14 +274,14 @@ public class Main {
         }
 
         Double resultado8 = switch (operando) {
-            case "+" -> primerNumero_8 + segundonumero8;
-            case "-" -> primerNumero_8 - segundonumero8;
-            case "*" -> primerNumero_8 * segundonumero8;
-            default -> primerNumero_8 / segundonumero8;
+            case "+" -> primernumero_8 + segundonumero8;
+            case "-" -> primernumero_8 - segundonumero8;
+            case "*" -> primernumero_8 * segundonumero8;
+            default -> primernumero_8 / segundonumero8;
         };
 
 
-        System.out.println("El resultado de "+ primerNumero_8 + "\s" + operando + "\s" +
+        System.out.println("El resultado de "+ primernumero_8 + "\s" + operando + "\s" +
                 segundonumero8 +" es: " + resultado8);
     }
     public static void ejercicio9(Scanner sc) {
