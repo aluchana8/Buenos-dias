@@ -306,6 +306,31 @@ public class Main {
     }
     public static void ejercicio10(Scanner sc) {
 
+        System.out.println("Escriba el numero hasta el que quiere comprobar");
+        while (!sc.hasNextInt()) {
+            System.out.println("El dato debe ser numerico y entero");
+            sc.next();
+        }
+        Integer numero10 = Integer.valueOf(sc.next());
+        System.out.println("Escriba el primer dividendo");
+        while (!sc.hasNextInt()) {
+            System.out.println("El dato debe ser numerico y entero");
+            sc.next();
+        }
+        Integer dividendo1 = Integer.valueOf(sc.next());
+        System.out.println("Escriba el segundo dividendo");
+        while (!sc.hasNextInt()) {
+            System.out.println("El dato debe ser numerico y entero");
+            sc.next();
+        }
+        Integer dividendo2 = Integer.valueOf(sc.next());
+
+        for (int i = 1; i <= numero10 ; i++){
+            if ((i%dividendo1 == 0)&&(i%dividendo2 == 0)){
+                System.out.println(i);
+            }
+        }
+        System.out.println("FIN");
     }
     public static void ejercicio11(Scanner sc) {
 
