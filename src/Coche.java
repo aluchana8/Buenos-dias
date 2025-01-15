@@ -34,4 +34,8 @@ public class Coche {
                 "\nModelo= " + modelo +
                 "\nPrecio= " + precio ;
     }
+    public void descuento(double precio){
+        this.precio =(getPrecio().doubleValue());
+    }
+
 }
