@@ -48,7 +48,7 @@ public class Main {
 
         //Ejercicio 10
 
-        //ejercicio10(sc);
+        ejercicio10(sc);
 
         //Ejercicio 11
 
@@ -249,22 +249,60 @@ public class Main {
 
         System.out.println("Escriba el operando.");
 
-        while () {
+        String operando = sc.next();
+        while (!(operando.equals("*")||operando.equals("+")||operando.equals("-")||operando.equals("/"))) {
             System.out.println("El dato debe ser +,-,* ó /");
-            sc.next();
+            operando = sc.next();
         }
-        Double operando = Double.valueOf(sc.next());
 
         System.out.println("Escriba el segundo numero.");
+
         while (!sc.hasNextDouble()) {
             System.out.println("El dato debe ser numerico");
             sc.next();
         }
+
         Double segundonumero8 = Double.valueOf(sc.next());
 
+        while ((segundonumero8.equals(0.0)&&operando.equals("/"))) {
+            System.out.println("El divisor no puede ser 0");
+            while (!sc.hasNextDouble()) {
+                System.out.println("El dato debe ser numerico");
+                sc.next();
+            }
+            segundonumero8 = Double.valueOf(sc.next());
+        }
+
+        Double resultado8 = switch (operando) {
+            case "+" -> primernumero8 + segundonumero8;
+            case "-" -> primernumero8 - segundonumero8;
+            case "*" -> primernumero8 * segundonumero8;
+            default -> primernumero8 / segundonumero8;
+        };
+
+
+        System.out.println("El resultado de "+ primernumero8 + "\s" + operando + "\s" +
+                segundonumero8 +" es: " + resultado8);
     }
     public static void ejercicio9(Scanner sc) {
-
+        System.out.println("Empieza la suma. Para parar escriba -1");
+        Double resultado9 = 0.0;
+        Double signumero = 0.0;
+        boolean continuar = true;
+        while (continuar){
+            while (!sc.hasNextDouble()) {
+                System.out.println("El dato debe ser numerico");
+                sc.next();
+            }
+            signumero = sc.nextDouble();
+            if (signumero == -1){
+                continuar = false;
+            }else {
+                resultado9 = signumero + resultado9;
+                System.out.println("El resultado es: " + resultado9);
+            }
+        }
+        System.out.println("FIN");
     }
     public static void ejercicio10(Scanner sc) {
 
