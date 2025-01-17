@@ -1,8 +1,8 @@
 public class Coche {
-    String marca;
-    String modelo;
-    Double precio;
-    Double descuento;
+    private String marca;
+    private String modelo;
+    private Double precio;
+    private Double descuento;
 
     public Coche(String marca, String modelo, Double precio){
         this.marca = marca;
@@ -42,8 +42,8 @@ public class Coche {
                 "\nModelo= " + modelo +
                 "\nPrecio= " + precio ;
     }
-    public void descuento(double precio){
-        this.precio=(this.precio*precio/100);
+    public void aplicarDescuento(double descuento){
+        precio=precio-(precio*(descuento/100));
     }
 
 }
