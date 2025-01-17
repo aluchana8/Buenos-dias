@@ -14,13 +14,11 @@ public class Main {
 
 
         System.out.println(antonio.getApellido());
-        Scanner sc = new Scanner(System.in);
         String prueba = sc.next();
         antonio.setApellido(prueba);
         System.out.println(antonio.getApellido());
         Coche audi = new Coche("Audi", "A5", 35000.500);
         System.out.println("Los datos del coche son:\n" + audi);
-        Scanner sc = new Scanner(System.in);
         String marca2 = sc.next();
         audi.setMarca(marca2);
         String modelo2 = sc.next();
