@@ -32,7 +32,9 @@ public class Main {
         System.out.println("El nuevo precio es:\n" + audi.getPrecio());
 
          */
-        ejercicio5(sc);
+        //ejercicio5(sc);
+        ejercicio6(sc);
+        //ejercicio7(sc);
     }
 
     public static void ejercicio5(Scanner sc) {
@@ -46,6 +48,29 @@ public class Main {
             System.out.println("El número " + b + " no es divisible del número " + a);
         }
 
+
+    }
+
+    public static void ejercicio6(Scanner sc) {
+        Integer a = sc.nextInt();
+        if ((a % 4 == 0 && a % 100 != 0) || a % 400 == 0) {
+            System.out.println("El año es bisiesto");
+        } else {
+            System.out.println("El año no es bisiesto");
+        }
+    }
+
+    public static void ejercicio7(Scanner sc) {
+        Integer a = sc.nextInt();
+        Integer b = sc.nextInt();
+        Integer c = sc.nextInt();
+        if (a > b && a > c) {
+            System.out.println("El número mayor es " + a);
+        } else if (b > a && b > c) {
+            System.out.println("El número mayor es " + b);
+        } else {
+            System.out.println("El número mayor es " + c);
+        }
 
     }
 
