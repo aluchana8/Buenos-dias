@@ -33,8 +33,8 @@ public class Main {
 
          */
         //ejercicio5(sc);
-        ejercicio6(sc);
-        //ejercicio7(sc);
+        //ejercicio6(sc);
+        ejercicio7(sc);
     }
 
     public static void ejercicio5(Scanner sc) {
