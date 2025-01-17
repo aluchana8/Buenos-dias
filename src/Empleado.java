@@ -1,4 +1,4 @@
-public class Empleado{
+public class Empleado {
     private String nombre;
     private String apellido;
     private Integer codigoDeEmpleado;
@@ -47,9 +47,9 @@ public class Empleado{
     public String toString() {
         return
                 "\nNombre= " + nombre +
-                "\nApellido= " + apellido +
-                "\nCódigo del Empleado= " + codigoDeEmpleado +
-                "\nNombre de la Empresa= " + nombredelaempresa;
+                        "\nApellido= " + apellido +
+                        "\nCódigo del Empleado= " + codigoDeEmpleado +
+                        "\nNombre de la Empresa= " + nombredelaempresa;
     }
 
 

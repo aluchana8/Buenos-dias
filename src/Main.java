@@ -4,6 +4,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         sc.useLocale(Locale.US);
@@ -16,8 +17,6 @@ public class Main {
         String prueba = sc.next();
         antonio.setApellido(prueba);
         System.out.println(antonio.getApellido());
-
-         */
         Coche audi = new Coche("Audi", "A5", 35000.500);
         System.out.println("Los datos del coche son:\n" + audi);
         //String marca2 = sc.next();
@@ -31,8 +30,24 @@ public class Main {
         Double descuento = sc.nextDouble();
         audi.aplicarDescuento(descuento);
         System.out.println("El nuevo precio es:\n" + audi.getPrecio());
+
+         */
+        ejercicio5(sc);
     }
 
+    public static void ejercicio5(Scanner sc) {
+        Integer a = sc.nextInt();
+        Integer b = sc.nextInt();
+        //b%a==0
+        if (b % a == 0) {
+            System.out.println("El número " + b + "es divisible del número " + a);
+        } else {
+            //b%a!=0
+            System.out.println("El número " + b + " no es divisible del número " + a);
+        }
+
+
+    }
 
 
 }
