@@ -2,11 +2,13 @@ public class Coche {
     String marca;
     String modelo;
     Double precio;
+    Double descuento;
 
     public Coche(String marca, String modelo, Double precio){
         this.marca = marca;
         this.modelo = modelo;
-        this.precio = precio;}
+        this.precio = precio;
+    }
 
     public String getMarca(){
         return marca;
@@ -26,6 +28,12 @@ public class Coche {
     public void setPrecio(Double precio){
         this.precio = precio;
     }
+    public Double getDescuento(){
+        return descuento;
+    }
+    public void setDescuento(Double descuento){
+        this.descuento = descuento;
+    }
 
     @Override
     public String toString() {
@@ -35,7 +43,7 @@ public class Coche {
                 "\nPrecio= " + precio ;
     }
     public void descuento(double precio){
-        this.precio =(getPrecio().doubleValue());
+        this.precio=(this.precio*precio/100);
     }
 
 }

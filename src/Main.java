@@ -28,6 +28,7 @@ public class Main {
         Double precio2 = sc.nextDouble();
         audi.setPrecio(precio2);
         System.out.println("Los datos del coche son:\n" + audi);
+        System.out.println("Los datos del coche son:\n" + audi);
     }
 
 
