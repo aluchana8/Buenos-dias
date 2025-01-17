@@ -34,7 +34,8 @@ public class Main {
          */
         //ejercicio5(sc);
         //ejercicio6(sc);
-        ejercicio7(sc);
+        //ejercicio7(sc);
+        ejercicio8(sc);
     }
 
     public static void ejercicio5(Scanner sc) {
@@ -71,6 +72,9 @@ public class Main {
         } else {
             System.out.println("El número mayor es " + c);
         }
+
+    }
+    public static void ejercicio8(Scanner sc){
 
     }
 
