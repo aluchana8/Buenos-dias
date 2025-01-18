@@ -75,8 +75,36 @@ public class Main {
 
     }
     public static void ejercicio8(Scanner sc){
+        Boolean condicion = true;
+        Integer a = sc.nextInt();
+        Integer b = sc.nextInt();
+        Character operador = sc.next().charAt(0);
+
+        while (!sc.hasNextInt()){
+            System.out.println("Debe de ser un número. Introduzcalo de nuevo: ");
+            sc.next();
+
+        }
+
+        while (sc.next().charAt(0)) {
+            System.out.println("Debe de ser un carácter de operación matemática. Introduzcalo de nuevo: ");
+        }
+
+
+        while (!sc.hasNextInt()) {
+            System.out.println("Debe de ser un número. Introduzcalo de nuevo: ");
+            sc.next();
+
+        }
+
+        //for (int i=0;a=) {
+
+        System.out.println("El resultado de su operación es = ");
+
+
 
     }
+
 
 
 }
