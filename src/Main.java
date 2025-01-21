@@ -74,31 +74,56 @@ public class Main {
         }
 
     }
-    public static void ejercicio8(Scanner sc){
-        Boolean condicion = true;
+    public static void ejercicio8(Scanner sc) {
+        while (true) {
+
+            Boolean condicion = true;
+            System.out.println("Introduzca el primer número: ");
+
+            while (!sc.hasNextDouble()) {
+                System.out.println("Debe de ser un número. Introduzcalo de nuevo: ");
+                sc.next();
+            }
+            Double a = sc.nextDouble();
+
+            System.out.println("Introduzca el operador: ");
+
+            String operador = sc.next();
+            while (!operador.equals("+") && !operador.equals("-") && !operador.equals("*") && !operador.equals("/")) {
+                System.out.println("Debe de ser o un (+), un (-), un (*), o una (/). ");
+                operador = sc.next();
+            }
+
+            System.out.println("Introduzca el segundo número: ");
+
+            while (!sc.hasNextDouble()) {
+                System.out.println("Debe de ser un número. Introduzcalo de nuevo: ");
+                sc.next();
+            }
+            Double b = sc.nextDouble();
+            //for (int i=0;a=) {
 
 
-        while (!sc.hasNextInt()){
-            System.out.println("Debe de ser un número. Introduzcalo de nuevo: ");
-            sc.next();
+            Double resultado;
 
+            if (operador.equals("+")) {
+                resultado = a + b;
+            } else if (operador.equals("-")) {
+                resultado = a - b;
+
+            } else if (operador.equals("*")) {
+                resultado = a * b;
+
+            } else {
+                resultado = a / b;
+
+            }
+
+            System.out.println("El resultado de su operación es = " + resultado + "\n");
 
         }
-        Integer a = sc.nextInt();
-
-        while (!sc.hasNextInt()) {
-            System.out.println("Debe de ser un número. Introduzcalo de nuevo: ");
-            sc.next();
-
-        }
-        Integer b = sc.nextInt();
-        //for (int i=0;a=) {
-
-        System.out.println("El resultado de su operación es = ");
-
-
-
     }
+
 
 
 
