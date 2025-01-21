@@ -76,22 +76,22 @@ public class Main {
     }
     public static void ejercicio8(Scanner sc){
         Boolean condicion = true;
-        Integer a = sc.nextInt();
-        Integer b = sc.nextInt();
 
 
         while (!sc.hasNextInt()){
             System.out.println("Debe de ser un número. Introduzcalo de nuevo: ");
             sc.next();
 
+
         }
+        Integer a = sc.nextInt();
 
         while (!sc.hasNextInt()) {
             System.out.println("Debe de ser un número. Introduzcalo de nuevo: ");
             sc.next();
 
         }
-
+        Integer b = sc.nextInt();
         //for (int i=0;a=) {
 
         System.out.println("El resultado de su operación es = ");
