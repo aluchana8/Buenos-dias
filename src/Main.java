@@ -35,7 +35,8 @@ public class Main {
         //ejercicio5(sc);
         //ejercicio6(sc);
         //ejercicio7(sc);
-        ejercicio8(sc);
+        //ejercicio8(sc);
+        ejercicio9(sc);
     }
 
     public static void ejercicio5(Scanner sc) {
@@ -74,6 +75,7 @@ public class Main {
         }
 
     }
+
     public static void ejercicio8(Scanner sc) {
         while (true) {
 
@@ -123,8 +125,28 @@ public class Main {
 
         }
     }
+    public static void ejercicio9(Scanner sc) {
+        Boolean condicion = true;
+        System.out.println("Introduzca números: ");
 
+        while (!sc.hasNextInt()) {
+            System.out.println("Debe de ser un número. Introduzcalo de nuevo: ");
+            sc.next();
 
+        }
 
+        int a = sc.nextInt();
 
+        if (a==-1) {
+            System.out.println("Se ha pausado la suma de los números por introducir -1 ");
+        }
+
+    }
 }
+
+
+
+
+
+
+
