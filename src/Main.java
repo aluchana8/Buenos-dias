@@ -127,6 +127,7 @@ public class Main {
     }
     public static void ejercicio9(Scanner sc) {
         Boolean condicion = true;
+
         System.out.println("Introduzca números: ");
 
         while (!sc.hasNextInt()) {
@@ -134,12 +135,22 @@ public class Main {
             sc.next();
 
         }
-
         int a = sc.nextInt();
 
         if (a==-1) {
-            System.out.println("Se ha pausado la suma de los números por introducir -1 ");
+            System.out.println("Se ha pausado la suma de los números por introducir: " + a);
         }
+
+
+
+
+
+
+
+
+
+
+
 
     }
 }
