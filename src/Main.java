@@ -130,16 +130,12 @@ public class Main {
 
         System.out.println("Introduzca números: ");
 
-        while (!sc.hasNextInt()) {
-            System.out.println("Debe de ser un número. Introduzcalo de nuevo: ");
-            sc.next();
-
-        }
-        int a = sc.nextInt();
-
-        if (a==-1) {
-            System.out.println("Se ha pausado la suma de los números por introducir: " + a);
-        }
+        Integer resultado = 0;
+        Integer a = -1;
+        do {
+            a = sc.nextInt();
+        }while(a!=-1);
+        System.out.println("Se ha pausado su cáclucla porque ha introducido un -1");
 
 
 
