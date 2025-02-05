@@ -133,14 +133,16 @@ public class Main {
         Integer resultado = 0;
         Integer a = -1;
         do {
+            while (!sc.hasNextInt()) {
+                System.out.println("Tiene que meter un número entero");
+                sc.next();
+            }
             a = sc.nextInt();
+            if (a!=-1) {
+                resultado = a + resultado;
+                System.out.println("La suma de los números es: " + resultado);
+            }
         }while(a!=-1);
-        Integer suma = (resultado + a);
-
-        for  (int i = 0 ; i!=-1 ; i++){
-            System.out.println(suma);
-
-        }
 
 
         System.out.println("Se ha pausado su cálculo porque ha introducido un -1");
