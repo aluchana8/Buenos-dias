@@ -135,7 +135,15 @@ public class Main {
         do {
             a = sc.nextInt();
         }while(a!=-1);
-        System.out.println("Se ha pausado su cáclucla porque ha introducido un -1");
+        Integer suma = (resultado + a);
+
+        for  (int i = 0 ; i!=-1 ; i++){
+            System.out.println(suma);
+
+        }
+
+
+        System.out.println("Se ha pausado su cálculo porque ha introducido un -1");
 
 
 
