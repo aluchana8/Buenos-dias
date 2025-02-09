@@ -157,7 +157,6 @@ public class Main {
                 System.out.println("Este número es divisible entre 2 y 3: ");
                 System.out.println(i);
             }
-
         }
     }
 }
