@@ -36,7 +36,8 @@ public class Main {
         //ejercicio6(sc);
         //ejercicio7(sc);
         //ejercicio8(sc);
-        ejercicio9(sc);
+        //ejercicio9(sc);
+        ejercicio10(sc);
     }
 
     public static void ejercicio5(Scanner sc) {
@@ -147,17 +148,17 @@ public class Main {
 
         System.out.println("Se ha pausado su cálculo porque ha introducido un -1");
 
+    }
+    public static void ejercicio10(Scanner sc) {
 
+        System.out.println("Muestra los números del 1 al 100: ");
+        for (int i = 1; i <= 100; i++) {
+            if (i%2==0 && i%3==0){
+                System.out.println("Este número es divisible entre 2 y 3: ");
+                System.out.println(i);
+            }
 
-
-
-
-
-
-
-
-
-
+        }
     }
 }
 
